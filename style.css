@@ -2837,6 +2837,7 @@ nav.main-navigation ul li:hover > ul {
 
 .portfolio:hover .portfolio-content {
   top: 0;
+  padding-bottom: 50%;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
