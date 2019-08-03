@@ -28,19 +28,9 @@
 	<link rel="stylesheet" href="css/custom.css">
 
 
-	<script type="text/javascript">
-	function parseLink(){
-  		var tagA = document.getElementsByTagName( "a" );
-  		re = new RegExp( "^(http://" + document.domain + ")|(javascript:)", "i" );
-  		for( var i=0; i < tagA.length; i++ ){
-    	if( !tagA[i].href.match( re ) ){ tagA[i].target = "_blank"; }
-  		}
-	}
-	</script>
-
 </head>
 
-<body onload="parseLink();">
+<body>
 
 	<!-- Wrapper -->
 	<div id="wrapper" class="wrapper">
