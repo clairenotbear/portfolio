@@ -26,15 +26,19 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/custom.css">
+
+    <script type="text/javascript">
+    function parseLink(){
+        var tagA = document.getElementsByTagName( "a" );
+        re = new RegExp( "^(http://" + document.domain + ")|(javascript:)", "i" );
+        for( var i=0; i < tagA.length; i++ ){
+        if( !tagA[i].href.match( re ) ){ tagA[i].target = "_blank"; }
+        }
+    }
+    </script>
 </head>
 
-<body>
-	<!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-	<!-- Add your site or application content here -->
-
+<body  onload="parseLink();">
 	<!-- Wrapper -->
 	<div id="wrapper" class="wrapper">
 
