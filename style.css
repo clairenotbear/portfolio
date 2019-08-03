@@ -600,6 +600,7 @@ h5,
 h6,
 .h6 {
   font-weight: 400;
+  color: #ffffff;
 }
 
 a:hover,
@@ -2779,7 +2780,7 @@ nav.main-navigation ul li:hover > ul {
   height: 100%;
   padding: 100px 50px 100px 50px;
   text-align: center;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2812,7 +2813,7 @@ nav.main-navigation ul li:hover > ul {
 }
 
 .portfolio .portfolio-content h5 a:hover {
-  color: #000000;
+  color: #FF4C33;
 }
 
 .portfolio .portfolio-content h6 {
@@ -3003,6 +3004,7 @@ nav.main-navigation ul li:hover > ul {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 14px;
+  color: #000000;
 }
 
 .portfolio-details-info .post-share ul {
