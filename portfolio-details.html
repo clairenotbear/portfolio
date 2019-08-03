@@ -27,19 +27,9 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/custom.css">
 
-    <script type="text/javascript">
-    function parseLink(){
-        var tagA = document.getElementsByTagName( "a" );
-        re = new RegExp( "^(http://" + document.domain + ")|(javascript:)", "i" );
-        for( var i=0; i < tagA.length; i++ ){
-        if( !tagA[i].href.match( re ) ){ tagA[i].target = "_blank"; }
-        }
-    }
-    </script>
-
 </head>
 
-<body   onload="parseLink();" onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;" oncopy="return false;">
+<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;" oncopy="return false;">
 	<!-- Wrapper -->
 	<div id="wrapper" class="wrapper">
 
@@ -125,8 +115,10 @@
                                 <div class="post-share">
                                     <h6>Share:</h6>
                                     <ul>
-                                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://clairenotbear.github.io%2Fportfolio%2Fportfolio-details.html"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="https://twitter.com/intent/tweet?text=https://clairenotbear.github.io%2Fportfolio%2Fportfolio-details.html"><i class="fa fa-twitter"></i></a></li>
+                                         <ul>
+                                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://clairenotbear.github.io%2Fportfolio%2Fportfolio-details.html" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/intent/tweet?text=https://clairenotbear.github.io%2Fportfolio%2Fportfolio-details.html"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    </ul>
                                     </ul>
                                 </div>
                             </div>
