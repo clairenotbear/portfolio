@@ -26,11 +26,14 @@
 
 	<!-- Custom Styles -->
 	<link rel="stylesheet" href="css/custom.css">
-
-
 </head>
 
-<body onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;" oncopy="return false;">
+<body>
+	<!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+	<!-- Add your site or application content here -->
 
 	<!-- Wrapper -->
 	<div id="wrapper" class="wrapper">
@@ -38,12 +41,12 @@
 		<span class="cursor"></span>
 
 		<!-- Header -->
-		<header class="header sticky-header">
+		<header class="header sticky-header fixed-header">
 			<div class="container">
 				<div class="header-inner d-none d-lg-flex">
 					<div class="header-logo">
 						<a href="index.html">
-							<img src="img/logo/logo-dark.jpg" alt="logo">
+							<img src="img/logo/logo-dark.png" alt="logo">
 						</a>
 					</div>
 					<div class="header-navigation">
@@ -53,24 +56,22 @@
 							<span></span>
 						</button>
 						<nav class="main-navigation">
-                            <ul>
+							<ul>
                                 <li><a href="index.html">HOME</a></li>
-                                <li><a href="about.html">ABOUT</a></li>
-                                <li><a href="contact.html">CONTACT</a></li>
-                            </ul>
-                        </nav>
+								<li><a href="contact.html">CONTACT</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 				<div class="mobile-menu-wrapper d-block d-lg-none">
 					<div class="mobile-menu clearfix">
 						<a href="index.html" class="mobile-logo">
-							<img src="img/logo/logo-dark.jpg" alt="mobile logo">
+							<img src="img/logo/logo-dark.png" alt="mobile logo">
 						</a>
 					</div>
 				</div>
 			</div>
 		</header>
-		<!--// Header -->
 		
 		<!-- Page Conttent -->
 		<main class="page-content">
@@ -80,8 +81,8 @@
 				<div class="container">
 
 					<div class="portfolio-filters text-center">
-						<button data-filter="*" class="is-checked">ALL</button>
-						<button data-filter=".portfolio-filter-photoshop">UI/UX</button>
+						<button data-filter="*">ALL</button>
+						<button data-filter=".portfolio-filter-photoshop"  class="is-checked" >UI/UX</button>
 						<button data-filter=".portfolio-filter-design">BRAND</button>
 						<button data-filter=".portfolio-filter-graphic">GRAPHIC</button>
 					</div>
@@ -90,14 +91,14 @@
 						
 						<!-- Single Portfolio -->
 						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-insect-details.html';"class="portfolio">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-1.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-insect-details.html">The Notes of an Insect</a></h5>
-									<h6>POSTER</h6>
+									<h5><a href="portfolio-details.html">The Notes of an Insect</a></h5>
+									<h6>Graphic</a></h6>
 								</div>
 							</div>
 						</div>
@@ -105,150 +106,134 @@
 						
 						<!-- Single Portfolio -->
 						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-detailui1.html';"class="portfolio">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-2.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a href="img/portfolio/lg-size/portfolio-image-lg-2.jpg" class="portfolio-zoom-button"></a>
 									<h5><a href="portfolio-detailui1.html">slimduet Plus</a></h5>
-									<h6>APP UI/UX</h6>
+									<h6>UI/UX</a></h6>
 								</div>
-
 							</div>
 						</div>
 						<!--// Single Portfolio -->
 						
 						<!-- Single Portfolio -->
-							<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-detailui2.html';"class="portfolio">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-3.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a href="img/portfolio/lg-size/portfolio-image-lg-3.jpg" class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-detailui2.html">Taisys Webside Redesign</a></h5>
-									<h6>WEBSITE UI/UX</h6>
+									<h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+									<h6><a href="portfolio.html">PORTFOLIO</a></h6>
 								</div>
 							</div>
 						</div>
 						<!--// Single Portfolio -->
 						
 						<!-- Single Portfolio -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-sandw-details.html';"class="portfolio">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-4.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a href="img/portfolio/lg-size/portfolio-image-lg-4.jpg" class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-sandw-details.html">The Journey of the Sheep and the Wolf</a></h5>
-									<h6>Illustrtion</h6>
+									<h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+									<h6><a href="portfolio.html">PORTFOLIO</a></h6>
 								</div>
 							</div>
 						</div>
 						<!--// Single Portfolio -->
 						
 						<!-- Single Portfolio -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-reset-details.html';"class="portfolio">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-5.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a href="img/portfolio/lg-size/portfolio-image-lg-5.jpg" class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-reset-details.html">RE:SET-Youth Drama Festival</a></h5>
-									<h6>POSTER</h6>
+									<h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+									<h6><a href="portfolio.html">PORTFOLIO</a></h6>
 								</div>
 							</div>
 						</div>
 						<!--// Single Portfolio -->
 						
 						<!-- Single Portfolio -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-design">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-feather-details.html';"class="portfolio">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop portfolio-filter-design">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-6.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a href="img/portfolio/lg-size/portfolio-image-lg-6.jpg" class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-feather-details.html">Feather Interior VI</a></h5>
-									<h6>VISUAL IDENTITY</h6>
+									<h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+									<h6><a href="portfolio.html">PORTFOLIO</a></h6>
 								</div>
 							</div>
 						</div>
 						<!--// Single Portfolio -->
 						
 						<!-- Single Portfolio -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-feather-details.html';"class="portfolio">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-7.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a href="img/portfolio/lg-size/portfolio-image-lg-7.jpg" class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-detailui3.html">b-mobile</a></h5>
-									<h6>APP UI/UX</h6>
+									<h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+									<h6><a href="portfolio.html">PORTFOLIO</a></h6>
 								</div>
 							</div>
 						</div>
 						<!--// Single Portfolio -->
 						
 						<!-- Single Portfolio -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-feather-details.html';"class="portfolio">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-design">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-8.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a href="img/portfolio/lg-size/portfolio-image-lg-8.jpg" class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-detailui4.html">Online Customer Service</a></h5>
-									<h6>WIDGET UI</h6>
+									<h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+									<h6><a href="portfolio.html">PORTFOLIO</a></h6>
 								</div>
 							</div>
 						</div>
 						<!--// Single Portfolio -->
 						
 						<!-- Single Portfolio -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-feather-details.html';"class="portfolio">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-9.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a href="img/portfolio/lg-size/portfolio-image-lg-9.jpg" class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-detailui5.html">dime WORLD</a></h5>
-									<h6>APP UI/UX</h6>
+									<h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+									<h6><a href="portfolio.html">PORTFOLIO</a></h6>
 								</div>
 							</div>
 						</div>
                         <!--// Single Portfolio -->
 						
 						<!-- Single Portfolio -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-design">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-feather-details.html';"class="portfolio">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-10.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a href="img/portfolio/lg-size/portfolio-image-lg-10.jpg" class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-artexpo-details.html">Blossom</a></h5>
-									<h6>EXHIBITION VISUAL IDENTITY</h6>
-								</div>
-							</div>
-						</div>
-                        <!--// Single Portfolio -->
-						
-						<!-- Single Portfolio -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-design">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-feather-details.html';"class="portfolio">
-								<div class="portfolio-image">
-									<img src="img/portfolio/portfolio-image-11.jpg" alt="portfolio image">
-								</div>
-								<div class="portfolio-content">
-									<a href="img/portfolio/lg-size/portfolio-image-lg-11.jpg" class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-fanjie-details.html">FANJIE</a></h5>
-									<h6>VISUAL IDENTITY</h6>
+									<h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+									<h6><a href="portfolio.html">PORTFOLIO</a></h6>
 								</div>
 							</div>
 						</div>
@@ -256,14 +241,29 @@
 						
 						<!-- Single Portfolio -->
 						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic">
-							<div style="cursor:pointer;" onclick="location.href='portfolio-feather-details.html';"class="portfolio">
+							<div class="portfolio">
+								<div class="portfolio-image">
+									<img src="img/portfolio/portfolio-image-11.jpg" alt="portfolio image">
+								</div>
+								<div class="portfolio-content">
+									<a href="img/portfolio/lg-size/portfolio-image-lg-11.jpg" class="portfolio-zoom-button"></a>
+									<h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+									<h6><a href="portfolio.html">PORTFOLIO</a></h6>
+								</div>
+							</div>
+						</div>
+                        <!--// Single Portfolio -->
+						
+						<!-- Single Portfolio -->
+						<div class="col-xl-3 col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop portfolio-filter-design">
+							<div class="portfolio">
 								<div class="portfolio-image">
 									<img src="img/portfolio/portfolio-image-12.jpg" alt="portfolio image">
 								</div>
 								<div class="portfolio-content">
 									<a href="img/portfolio/lg-size/portfolio-image-lg-12.jpg" class="portfolio-zoom-button"></a>
-									<h5><a href="portfolio-cwtel-details.html">CWTel 4G Router</a></h5>
-									<h6>PACKAGING</h6>
+									<h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+									<h6><a href="portfolio.html">PORTFOLIO</a></h6>
 								</div>
 							</div>
 						</div>
@@ -352,7 +352,7 @@
 					<div class="row justify-content-center">
 						<div class="col-lg-7">
 							<div class="section-title text-center">
-								<a href="https://clairenotbear.github.io/portfolio/index.html"><img src="img/logo/logo-dark.jpg"></a>
+								<a href="https://clairenotbear.github.io/portfolio/index.html"><img src="img/logo/logo-dark.png"></a>
                                 <p>Brockville, Ontario, Canada</p>
                                 <p><a href="mailto://ru79414@gmail.com">ru79414@gmail.com</a></p>
 							</div>
@@ -380,8 +380,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
-
-
 </body>
 
 
