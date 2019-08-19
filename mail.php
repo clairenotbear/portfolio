@@ -1,5 +1,5 @@
 <?php 
-if(@$_POST['nickname']!=''){
+if(@$_POST['nickname']!='' && @$_COOKIE['mail']!='sent'){
 $nickname=$_POST['nickname'];
 $email=$_POST['email'];
 $sub=$_POST['subject'];
